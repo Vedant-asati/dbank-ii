@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <title>ii_integration</title>
+    <title>greet</title>
     <base href="/" />
     <link rel="icon" href="favicon.ico" />
     <link type="text/css" rel="stylesheet" href="main.css" />
@@ -13,12 +13,26 @@
       <img src="logo2.svg" alt="DFINITY logo" />
       <br />
       <br />
-      <form action="#">
-        <label for="name">Enter your name: &nbsp;</label>
-        <input id="name" alt="Name" type="text" />
-        <button type="submit">Click Me!</button>
+      <form>
+        <button id="login">Login!</button>
       </form>
-      <section id="greeting"></section>
+      <br />
+      <form>
+        <button id="whoAmI">Who Am I</button>
+      </form>
+      <section id="principal"></section>
     </main>
+    <div class="container">
+      <img src="../assets/cover.png" alt="logo" width="100"/>
+      <h1>Current Balance: $<span id="balance">234</span></h1>
+      <div class="divider"></div>
+      <form action="#">
+      <h2>Amount to Top Up</h2>
+      <input id="input-amount" type="number" step="0.01" min=0 name="topUp" value="0.00"/>
+      <h2>Amount to Withdraw</h2>
+      <input id="withdrawal-amount" type="number" name="withdraw" step="0.01" min=0 value="0.00"/>
+      <input id="submit-btn" type="submit" value="Finalise Transaction" />
+    </form>
+    </div>
   </body>
 </html>
